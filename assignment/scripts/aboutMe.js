@@ -36,7 +36,7 @@ let food= 'Vietnamese food';
 
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 
-let pets= '1';
+let pets= '2';
 
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 
@@ -88,6 +88,20 @@ if( pets <= allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 
+let mostPets;
+
+if(pets > friendsPets){
+    mostPets= pets;
+}
+else if( pets === friendsPets){
+    mostPets= 'Amount of pets are equal!';
+}
+else{
+    mostPets= friendsPets;
+}
+    
+
+console.log(mostPets);
 
 
 
