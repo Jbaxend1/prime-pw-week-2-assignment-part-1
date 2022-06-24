@@ -18,7 +18,7 @@ console.log(fullName);
 
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 
-let luckyNumber= '3'
+let luckyNumber = 3
 
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
@@ -36,11 +36,11 @@ let food= 'Vietnamese food';
 
 // 9 - Create a variable called `pets` and set it to the value of the number of pets you have
 
-let pets= '2';
+let pets = 5;
 
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 
-let friendsPets= '2'; 
+let friendsPets = 2; 
 
 // 11 - Add two pets to your `pets` variable
 
@@ -48,7 +48,7 @@ console.log(pets + 2);
 
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
-const allowedPets= '4'
+const allowedPets = 4
 
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
@@ -74,11 +74,20 @@ if( luckyNumber==2 && adventurous ){
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
-if( pets <= allowedPets){
-    console.log( 'I have enough pets');}
-    else{
-    console.log( 'Oh no, I have too many pets!')
+if (pets < allowedPets){
+    console.log('I can have more pets!');
+} else if (pets === allowedPets) {
+    console.log('I have enough pets');
+} else if (pets > allowedPets) {
+    console.log('Oh no, I have too many pets!');
 }
+
+// if( pets < allowedPets){
+//     console.log( 'I have enough pets');}
+//     else if(pets)
+//     else{
+//     console.log( 'Oh no, I have too many pets!')
+// }
 
 // STRETCH GOALS:
 
@@ -116,19 +125,19 @@ let comment;
 
 switch(luckyNumber) {
     case '1':
-    comment = 'First is the worst.';
+        comment = 'First is the worst.';
     break;
 
     case '2':
-    comment = 'Second is the best';
+        comment = 'Second is the best';
     break;
 
     case '3':
-    comment = 'Third is the one with the polka dot dress';
+        comment = 'Third is the one with the polka dot dress';
     break;
 
     default:
-    comment = "Luck is what happens when preparation meets opportunity";
+        comment = "Luck is what happens when preparation meets opportunity";
 }
 
 console.log(comment);
